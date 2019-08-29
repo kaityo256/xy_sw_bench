@@ -1,7 +1,6 @@
 # 古典モンテカルロ法の実行時間テスト
 
-[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LI
-CENSE)
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
 ## 概要
 
@@ -31,6 +30,7 @@ LDFLAGS=-lmpi
 MPIプログラムとして実行する。引数は必要ない。
 以下は実行例である。
 
+```sh
 $ mpirun -np 8 ./xy3d
 L = 32
 Procs = 8
@@ -44,6 +44,7 @@ Binder Ratio = 0.883666 +- 0.00134068
 Elapsed Time = 105.052
 MCs/sec/procs = 182.767
 Total MCs/sec = 1462.14
+```
 
 出力された「Total MCs/sec」が「一秒あたり何回サンプリングできたか」を示す値であり、大きいほどよい。
 
@@ -58,4 +59,4 @@ Total MCs/sec = 1462.14
 
 ## ライセンス
 
-This software is released under the MIT License, see LICENSE.
+This software is released under the MIT License, see [LICENSE](LICENSE).
