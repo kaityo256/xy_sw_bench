@@ -149,7 +149,7 @@ int main(int argc, char **argv) {
   int rank, procs;
   MPI_Comm_rank(MPI_COMM_WORLD, &rank);
   MPI_Comm_size(MPI_COMM_WORLD, &procs);
-  mt.seed(1);
+  mt.seed(rank);
   mout.SetRank(rank);
   init_neighbor();
   const double Tc = 2.2016;
