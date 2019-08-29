@@ -9,7 +9,7 @@
 const int L = 32;
 const int N = L * L * L;
 const double Pi = M_PI;
-const char *version = "1.00";
+const char *version = "1.0";
 
 int cluster[N];
 int flip[N];

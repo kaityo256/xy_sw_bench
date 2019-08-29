@@ -32,7 +32,7 @@ MPIプログラムとして実行する。引数は必要ない。
 
 ```sh
 $ mpirun -np 8 ./xy3d
-MC benchmark: Version 1.00
+MC benchmark: Version 1.0
 L = 32
 Procs = 8
 Thermalize Loop = 1000
