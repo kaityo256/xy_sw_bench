@@ -9,6 +9,7 @@
 const int L = 32;
 const int N = L * L * L;
 const double Pi = M_PI;
+const char *version = "1.00";
 
 int cluster[N];
 int flip[N];
@@ -153,6 +154,7 @@ int main(int argc, char **argv) {
   mout.SetRank(rank);
   init_neighbor();
   const double Tc = 2.2016;
+  mout << "MC benchmark: Version " << version << std::endl;
   mout << "L = " << L << std::endl;
   mout << "Procs = " << procs << std::endl;
   mout << "Thermalize Loop = " << T_LOOP << std::endl;
