@@ -19,7 +19,7 @@ makefile.optというファイルを用意し、CCにC++コンパイラを、CPP
 
 ```makefile
 CC=mpicxx
-CPPFLAGS=-O3
+CPPFLAGS=-O3 -std=c++11
 LDFLAGS=-lmpi
 ```
 

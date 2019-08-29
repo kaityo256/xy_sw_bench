@@ -15,8 +15,9 @@ int flip[N];
 int neighbors[N][6];
 double sx[N], sy[N];
 
+std::mt19937 mt;
+
 double myrand(void) {
-  static std::mt19937 mt(1);
   std::uniform_real_distribution<> ud(0.0, 1.0);
   return ud(mt);
 }
@@ -148,6 +149,7 @@ int main(int argc, char **argv) {
   int rank, procs;
   MPI_Comm_rank(MPI_COMM_WORLD, &rank);
   MPI_Comm_size(MPI_COMM_WORLD, &procs);
+  mt.seed(1);
   mout.SetRank(rank);
   init_neighbor();
   const double Tc = 2.2016;
